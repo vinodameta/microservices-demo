@@ -19,7 +19,7 @@ caches:
 - path: gopath/
 
 run:
-  path: microservices-demo/ci/build.yml
+  path: microservices-demo/ci/build
   
 
 #run:
