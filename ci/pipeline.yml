@@ -1,0 +1,15 @@
+---
+resources:
+- name: microservices
+  type: git
+  source:
+    uri: https://github.com/vinodameta/microservices-demo
+    branch: master
+
+jobs:
+- name: build
+  plan:
+  - get: microservices
+    trigger: true
+  - task: run-build
+    file: microservices-demo/ci/build.yml
