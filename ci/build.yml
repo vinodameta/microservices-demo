@@ -3,7 +3,9 @@ platform: linux
 
 image_resource:
   type: registry-image
-  source: {repository: golang}
+  source:
+    repository: vinod18/testimage
+    tag: '1.0'  
 
 inputs:
 - name: microservices
@@ -18,3 +20,10 @@ caches:
 
 run:
   path: microservices-demo/ci/build.yml
+  
+
+#run:
+#  path: docker 
+#  args:
+#  - build -t vinod18/testimage .
+#  
