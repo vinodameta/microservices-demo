@@ -15,9 +15,6 @@ inputs:
 outputs:
 - name: assets
 
-caches:
-- path: gopath/
-
 run:
   path: microservices-demo/ci/build
   
