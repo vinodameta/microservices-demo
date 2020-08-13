@@ -25,6 +25,7 @@ COPY . .
 RUN chmod +x gradlew
 RUN ./gradlew installDist
 
+
 FROM openjdk:8-slim
 
 # Download Stackdriver Profiler Java agent
